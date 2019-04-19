@@ -1,0 +1,68 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;}
+*{margin:0;padding:0;}
+html{width:100%;height:100%;overflow:hidden;}
+body{width:100%;height:100%;font-family: "微软雅黑";min-width:990px;}
+ol,ul {list-style:none;}
+/*主要架构*/
+.container{width:100%;height:90%;}
+.leftMenu{width:16.5%;height:100%;background-color: #eee;float:left;display: inline;overflow: scroll;}
+.rightContent{padding-bottom: 20px;width:82.5%;height:100%;float:right;display: inline;}
+.header{background-color: #09F;width:100%;height: 60px;overflow: hidden;}
+.header .logo{width:11.7%;margin-left: 3%;margin-top: 0.5em;float: left;display: inline;cursor: pointer;}
+.header .line{width:1px;display: inline-block;background-color: #FFF;height:44px;margin-top: 8px;position:absolute;left:16.4%;}
+.header .sys-name{color: #FFF;line-height: 60px;margin-left: 3%;font-weight: bold;font-size: 17px;float: left;display: inline;}
+.header .user-info{color:#FFF;line-height: 60px;font-size: 13px;display: inline-block;}
+.header .user-info a{color:#FFF;}
+.header-right{display: inline-block;float: right;  overflow: hidden;padding-right: 10px;}
+.header-right .control{display: inline-block;line-height: 60px;}
+.header-right .control img{height: 24px;cursor: pointer;vertical-align: middle;}
+.mt70{margin-top: 70px !important;}
+.w118{width: 118px !important;}
+/*折叠*/
+.accordion {margin-bottom: 20px;}
+.accordion-group {margin-bottom: 2px;border: 0;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.accordion-heading {border-bottom: 0;}
+.accordion-heading .accordion-toggle {display: block;padding: 8px 15px;}
+.accordion-toggle {cursor: pointer;}
+.accordion-inner {padding: 9px 15px;border-top: 1px solid #e5e5e5;}
+.collapse {position: relative;height: 0;overflow: hidden;-webkit-transition: height 0.35s ease;-moz-transition: height 0.35s ease;-o-transition: height 0.35s ease;transition: height 0.35s ease;}
+.collapse.in {height: auto;}
+/*左侧菜单*/
+.leftMenu .accordion-group{margin-bottom: 0;border-top: 1px solid #CBCBCB;}
+.leftMenu a,.accordion-heading a{text-decoration:none;}
+.leftMenu .accordion-group:last-child{border-bottom: 1px solid #E5E5E5;}
+.leftMenu .accordion-heading a{display: block;padding-left: 40px;padding-right: 10px;position:relative;color: #969696;font-size: 14px;line-height: 40px;cursor: pointer;font-weight: bold;}
+.leftMenu i.pointer{position: absolute;right:16px;top:16px;}
+i.pointer{background:transparent url("../images/u38.png") no-repeat scroll 0% 0%;width:12px;height:9px;display: inline-block; }
+
+.leftMenu .accordion-heading img{width:20px;position: absolute;left:10px;top:10px;}
+.accordion-group.active .accordion-heading a{color:#FFF;background-color: #09F;}
+.accordion-group.active i.pointer{background:transparent url("../images/u92.png") no-repeat scroll 0% 0%;}
+.accordion-inner ul li a{display: block;background-color: #eee;padding-left: 26px;color:#999;font-weight:400;line-height: 26px;font-size: 13px;}
+.accordion-inner ul li.active a{background-color: #D9D8D8;}
+
+.accordion-group .accordion-heading a .arrows{position: absolute;width: 0;height: 0;border-color: transparent;border-style: solid;top: 16%;border-width: 1em 0.7em 1em 0;right: 0;border-right-color: transparent;}
+.accordion-group.active .accordion-heading a .arrows{border-right-color: #FFF;}
+.accordion.tree ul{margin-left: 12px;}
+.accordion.tree .accordion-group{border:none;font-size: 14px;padding-left: 20%;}
+.accordion.tree .accordion-group .accordion-inner{border-top: none;padding:4px 15px 0px 15px;}
+.accordion.tree .accordion-group a{color:#333;text-decoration: none;background-image:none;}
+.accordion.tree .accordion-group .accordion-heading{background: url(../images/tree-close.png) no-repeat left center;padding-left: 9px;}
+.accordion.tree .accordion-group.active .accordion-heading{background: url(../images/tree-open.png) no-repeat left center;}
+
+/*提示框*/
+.message{width: 38%;float: right;display: inline;}
+.message .unit{width: 378px;border: 1px solid #09F;float:right;display: none;padding-bottom: 4px;min-height: 170px;position: absolute;right: 1.5%;background-color: #FFF;  box-shadow: 2px 2px 2px #666;border-radius: 4px;}
+.remind{top:178px;}
+.sysmessage{top:380px;}
+.message .remind .title{background-color: #09F;}
+.message .sysmessage .title{background-color: #005BAC;}
+.message .sysmessage p{color:#F90;line-height: 20px;text-align: left;text-indent: 2em;padding: 1.5em;padding-top:1em;font-size: 13px;}
+.message .unit .title img{width:20px;margin-right: 4px;margin-left: 5px;margin-top: -4px;vertical-align: middle;}
+.message .unit .title h4{color:#FFF;font-size: 16px;line-height: 32px;}
+.message .remind ul li{background-color: #F7F7F7;margin-top:5.5px;margin-left:2%;margin-right:2%;}
+.message .remind ul li a{display: inline-block;line-height: 27px;color:#333;padding-left: 4%;font-size: 13px;width:72%;text-overflow: ellipsis;white-space: nowrap;}
+.message .remind ul li a:hover{color: #09F;text-decoration: underline;}
+.message .remind ul li .time{color:#c9c9c9;line-height: 27px;padding-right: 4%;font-size: 12px;float: right;display: inline;width: 18%;text-align: right;cursor: default;}
+.message .remind ul li .num{color:red;}

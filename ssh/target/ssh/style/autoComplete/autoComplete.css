@@ -1,0 +1,94 @@
+
+.email {
+	width: 100%
+}
+.email a {
+	font-size: 12px; color: #333; text-decoration: none
+}
+.email a:hover {
+	text-decoration: underline
+}
+.left {
+	border-right: #6a716e 1px solid; padding-right: 10px; border-top: #6a716e 1px solid; padding-left: 10px; font-size: 12px; padding-bottom: 10px; overflow: auto; border-left: #6a716e 1px solid; width: 180px; line-height: 1.6; padding-top: 10px; border-bottom: #6a716e 1px solid; height: 280px
+}
+.right {
+	border-right: #6a716e 1px solid; padding-right: 10px; border-top: #6a716e 1px solid; padding-left: 10px; font-size: 12px; padding-bottom: 10px; overflow: auto; border-left: #6a716e 1px solid; width: 180px; line-height: 1.6; padding-top: 10px; border-bottom: #6a716e 1px solid; height: 280px
+}
+.info {
+	cursor: pointer
+}
+.groupclose {
+	cursor: pointer
+}
+.left .groupclose {
+	cursor: pointer; line-height: 20px; height: 20px
+}
+.info.left {
+	cursor: pointer; line-height: 20px; height: 20px
+}
+right div {
+	cursor: pointer; line-height: 20px; height: 20px
+}
+.info.lxr {
+	cursor: pointer; line-height: 20px; height: 20px
+}
+.groupclose.lxr {
+	cursor: pointer; line-height: 20px; height: 20px
+}
+.groupclose {
+	display: block; font-weight: bold
+}
+.groupcloselm_ico {
+	border-top-width: 0px; padding-right: 0px; padding-left: 0px; border-left-width: 0px; background: url(compose0154f8.gif) no-repeat -64px -16px; border-bottom-width: 0px; padding-bottom: 0px; margin: 2px 1px 0px 2px; vertical-align: middle; width: 14px; padding-top: 0px; height: 12px; border-right-width: 0px
+}
+.groupopenlm_ico {
+	border-top-width: 0px; padding-right: 0px; padding-left: 0px; border-left-width: 0px; background: url(compose0154f8.gif) no-repeat -80px -16px; border-bottom-width: 0px; padding-bottom: 0px; margin: 2px 1px 0px 2px; vertical-align: middle; width: 14px; padding-top: 0px; height: 12px; border-right-width: 0px
+}
+#dialog a {
+	text-decoration: none; nocheck: true
+}
+#dialog a:hover {
+	
+}
+.groupsub div {
+	padding-left: 20px
+}
+.groupsub {
+	display: none
+}
+.mov {
+	background: url(bot_mov0b3dfa.gif) no-repeat; float: right; width: 16px; border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none
+}
+.divtxt {
+	border-right: #7c7c7c 1px solid; padding-right: 3px; border-top: #7c7c7c 1px solid; padding-left: 3px; font-size: 12px; min-height: 22px; padding-bottom: 3px; overflow: auto; border-left: #7c7c7c 1px solid; width: 100%; cursor: text; line-height: 20px; padding-top: 3px; border-bottom: #7c7c7c 1px solid; background-color: #fff
+}
+.divtxt .one {
+	float: left; white-space: nowrap; height: 20px
+}
+.divtxt .one b {
+	font-weight: 300
+}
+.divtxt .select.one {
+	color: #fff; background-color: #545f59
+}
+.divtxt .over.one {
+	background-color: #cfd4d1
+}
+.divtxt input {
+	border-top-width: 0px; padding-right: 0px; padding-left: 0px; border-left-width: 0px; font-size: 12px; border-bottom-width: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px; border-right-width: 0px
+}
+.hd {
+	display: none
+}
+.error {
+	color: red
+}
+.lxr {
+	font-size: 12px; margin: 0px 10px; overflow: auto; line-height: 20px; height: 350px; background-color: #fff
+}
+.lxr .tt {
+	border-right: #adb1af 1px solid; padding-right: 0px; border-top: #adb1af 1px solid; padding-left: 8px; margin-bottom: 6px; padding-bottom: 2px; border-left: #adb1af 1px solid; padding-top: 4px; border-bottom: #adb1af 1px solid; background-color: #e2e5e4
+}
+#inputemail {
+	height: 18px
+}

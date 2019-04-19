@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.modal-backdrop{z-index:1050}
+
+.transparent{opacity:0;filter:alpha(opacity=0)}
+
+.date{background-color:#FFF;}
+/**业务发起**/
+.input-container{margin:0 0 0 40px;}
+.input-item{cursor: auto;font-size: 13px;color: #666;line-height:40px;}
+.input-column2{width:50%;display: inline-block;float: left;}
+.input-label{display: inline-block;width: 160px;text-align:right;cursor:auto;}
+
+/**退回原因对话框**/
+.backreason-body{min-width:280px;width:36%;z-index: 920;border:1px solid #DDD;border-radius: 10px;position: absolute;top:25%;left:32%;background-color: #FFF;}
+.backreason-body .title{font-size: 16px;line-height: 40px;border-bottom: 2px solid #09F;text-align: center;color: #E7AC13;position: relative;}
+.backreason-body .content{text-align: center;font-size: 14px;height:180px;padding-top:20px;}
+.backreason-body textarea{width:240px;height:160px;}
+.backreason-body .footer{padding: 0.5em 0em 0.5em;text-align: center;}
+/**评级对话框**/
+.grade{display:none;}
+.grade-body{min-width:580px;width:60%;z-index: 920;border:1px solid #DDD;border-radius: 10px;position: absolute;top:25%;left:20%;background-color: #FFF;}
+.grade-body .title{font-size: 16px;line-height: 40px;border-bottom: 2px solid #09F;text-align: center;color: #E7AC13;position: relative;}
+.grade-body .content{text-align: center;font-size: 14px;height:180px;padding-top:20px;}
+.grade-body .footer{padding: 0.5em 0em 0.5em;text-align: center;}
+
+.div-evaluate-dialog{
+	width: 320px;
+	height:100px;
+	z-index:10;
+	position:absolute;
+	margin-top:-98px;
+	background: #EEE;
+	color: blue;
+}

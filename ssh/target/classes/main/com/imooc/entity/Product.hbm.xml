@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+	<!-- hibernate-mapping ：schema="schemaName" 模式的名字 catalogName 目录的名字 default-cascade="cascade_style" 链级分各 default-access="find|property|ClassNmae" 访问策略
+		default-lazy="true|false" 加载策略
+		package="pageageName"; 包名
+
+		class ：name="ClassName"  表示映射的是那个类
+				table="tableName"; 映射到数据的那个表名
+				batch-size="N"； 抓取策略 表示一次性可以抓取多少个
+				where="condition";条件
+				entity-name="EntityName" 同一个实体类可以映射多个表名
+
+		id :	name="propertyName"  表示它映射的是那个属性
+				type="typeName"; 数据类型
+				column="column_name"； 表示数据字段的名称
+				length="length";长度
+				<generator class="generatorClass"/> 主键生城策略
+				native 自动生成的
+				assigned 使用与自然主键，有java程序生成！
+	 -->
+	<class name="main.com.imooc.entity.Product" table="product">
+		<id name="pid" type="int" column="pid">
+			<!-- <generator class="assigned"/>  这个是id通过手动赋值的 下面的那个id是自动赋值的-->
+			<generator class="native"/>
+		</id>
+		<property name="pname" type="java.lang.String" length="20" column="pname">
+		</property>
+		<property name="price" type="java.lang.Double" column="price">
+		</property>
+		<!-- 显示年月日时分秒 -->
+		<!-- <property name="birthday" type="java.util.Date">
+            <column name="birthday" />
+        </property> -->
+		<!-- 只显示年月日 -->
+		<!-- <property name="birthday" type="date">
+            <column name="birthday" />
+        </property> -->
+		<!-- 只显示时分秒 -->
+		<!-- <property name="birthday" type="time">
+            <column name="birthday" />
+        </property> -->
+	</class>
+</hibernate-mapping>
